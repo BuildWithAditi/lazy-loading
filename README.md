@@ -1,16 +1,159 @@
-# React + Vite
+# 📊 React Dashboard with Routing & Lazy Loading
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive React Dashboard application built using **Vite**.  
+This project demonstrates dynamic routing, lazy loading (code splitting), and a clean modular layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🧭 React Router v6
+- ⚡ Lazy Loading using `React.lazy()`
+- ⏳ Suspense with custom Loader
+- 📂 Modular folder structure
+- 🎨 Clean sidebar layout
+- 📱 Responsive-ready structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router DOM
+- CSS
+
+---
+
+## 📁 Project Structure
+
+```
+react-app/
+│
+├── src/
+│   ├── layout/
+│   │   ├── Sidebar.jsx
+│   │   └── Navbar.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Analytics.jsx
+│   │   ├── Orders.jsx
+│   │   ├── Users.jsx
+│   │   └── Settings.jsx
+│   │
+│   ├── components/
+│   │   └── Loader.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚡ Lazy Loading Implementation
+
+Each route is dynamically imported:
+
+```js
+const Home = lazy(() => import("./pages/Home"));
+```
+
+Wrapped inside:
+
+```jsx
+<Suspense fallback={<Loader />}>
+```
+
+This improves performance by loading components only when required.
+
+---
+
+## 🧭 Available Routes
+
+- `/` → Home  
+- `/analytics` → Analytics  
+- `/orders` → Orders  
+- `/users` → Users  
+- `/settings` → Settings  
+
+---
+
+## 🛠 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/react-dashboard.git
+```
+
+### 2️⃣ Navigate to Project Folder
+
+```bash
+cd react-dashboard
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Run Development Server
+
+```bash
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Dependencies
+
+- react
+- react-dom
+- react-router-dom
+- vite
+
+---
+
+## 🎯 Learning Outcomes
+
+- React functional components
+- React Router v6
+- Lazy loading & Suspense
+- Modular project architecture
+- Clean dashboard layout design
+
+---
+
+## 🚀 Future Improvements
+
+- Active route highlighting
+- Dark mode toggle
+- Protected routes
+- Redux integration
+- API integration
+
+---
+
+## 👩‍💻 Author
+
+**Aditi Parmar**  
+B.E CSE (AI & ML)  
+Chandigarh University  
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
