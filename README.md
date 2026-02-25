@@ -86,7 +86,6 @@ This improves performance by loading components only when required.
 ---📷 Screenshots
 <img width="1914" height="933" alt="Screenshot 2026-02-17 120315" src="https://github.com/user-attachments/assets/253402e3-3b32-41dd-81b0-e3e784073952" />
 <img width="1918" height="871" alt="Screenshot 2026-02-17 120229" src="https://github.com/user-attachments/assets/f4471bd7-ad98-4780-9bfb-5782f7402209" />
-<img width="1256" height="757" alt="Screenshot 2026-02-17 115706" src="https://github.com/user-attachments/assets/44ed279d-1474-4be2-8864-66e09a5eed33" />
 <img width="1904" height="892" alt="Screenshot 2026-02-17 120245" src="https://github.com/user-attachments/assets/33fdefa3-47da-421a-b504-b36b0a8fbbec" />
 
 ---
